@@ -3,7 +3,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:/Users/Jerry/Documents/workspace/en-springcloud/config/src/main/resources/share
+          search-locations: file:/Users/Jerry/Documents/workspace/cloud-baseline/config/src/main/resources/share
   profiles:
      active: native
   application:

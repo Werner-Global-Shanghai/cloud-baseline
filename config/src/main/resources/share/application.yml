@@ -3,6 +3,6 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://jerry.wernerds.net:8761/eureka/
+      defaultZone: http://jerry.wernerds.net:8761/eureka/,http://jerrys-mac-mini.wernerds.net:8761/eureka
     healthcheck:
       enabled: true

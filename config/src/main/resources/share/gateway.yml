@@ -7,8 +7,3 @@ spring:
       discovery:
         locator:
           enabled: true
-#      routes:
-#      - id: event_route
-#        uri: http://jerry.wernerds.net
-#        predicates:
-#        - Path=/api/manage/*
