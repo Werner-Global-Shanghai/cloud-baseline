@@ -10,4 +10,5 @@ class ConfigApplication
 
 fun main(args: Array<String>) {
     runApplication<ConfigApplication>(*args)
+
 }

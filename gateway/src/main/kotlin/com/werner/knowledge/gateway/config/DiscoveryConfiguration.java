@@ -15,8 +15,11 @@ public class DiscoveryConfiguration {
 
         return builder.routes()
                 .route(route -> route
-                        .path("/api/manage/*")
+                        .path("/api/manage/**")
                         .uri("lb://management-service"))
+                .route(route -> route
+                        .path("/api/event/**")
+                        .uri("lb://event-service"))
                 .build();
     }
 

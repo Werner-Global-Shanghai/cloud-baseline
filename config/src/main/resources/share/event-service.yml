@@ -1,0 +1,31 @@
+server:
+  servlet:
+    context-path: /api/event
+  port: 8763
+
+spring:
+    application:
+        name: event-service
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    jackson:
+        serialization.indent_output: true
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:mysql://jerrys-mac-mini.wernerds.net:3306/event?useUnicode=true&characterEncoding=utf8&useSSL=false&verifyServerCertificate=false
+        name:
+        username: root
+        password: root
+        hikari:
+            data-source-properties:
+                cachePrepStmts: true
+                prepStmtCacheSize: 250
+                prepStmtCacheSqlLimit: 2048
+                useServerPrepStmts: true
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
+        show-sql: false
