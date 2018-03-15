@@ -11,6 +11,9 @@ spring:
             enabled: false
         livereload:
             enabled: false
+    redis:
+        host: jerrys-mac-mini.wernerds.net
+        port: 6379
     jackson:
         serialization.indent_output: true
     datasource:
