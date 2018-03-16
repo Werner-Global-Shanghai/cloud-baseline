@@ -1,0 +1,271 @@
+{
+	"info": {
+		"name": "Spring Boot",
+		"_postman_id": "274d9ffa-6caa-8c0e-fb7c-64d254a68d35",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/event/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"event",
+						"health"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/event/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"event",
+						"metrics"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getDemo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "jerry.wernerds.net:9999/api/manage/getdemo",
+					"host": [
+						"jerry",
+						"wernerds",
+						"net"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"manage",
+						"getdemo"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8762/api/manage/event-types/bycode/TEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8762/api/manage/event-types/bycode/TEST",
+					"host": [
+						"localhost"
+					],
+					"port": "8762",
+					"path": [
+						"api",
+						"manage",
+						"event-types",
+						"bycode",
+						"TEST"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get-event-types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/manage/event-types",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"event-types"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "save-event-type",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\" : \"TEST\",\n  \"description\": \"The event when subscriber receives wechat messages\"\n}"
+				},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/manage/event-types",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"event-types"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "get-events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/event/events",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"event",
+						"events"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "post event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"correlationId\": null,\n  \"eventTypeCode\": \"Wechat_message_received\"\n}"
+				},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/event/events",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"event",
+						"events"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "{{gatewayUrl}}/api/manage/event-types/bycode/TEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/manage/event-types/bycode/TEST",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"event-types",
+						"bycode",
+						"TEST"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "cached-logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/event/logs/all",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"event",
+						"logs",
+						"all"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "event-logs-clearall",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{gatewayUrl}}/api/event/logs/clearall",
+					"host": [
+						"{{gatewayUrl}}"
+					],
+					"path": [
+						"api",
+						"event",
+						"logs",
+						"clearall"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
