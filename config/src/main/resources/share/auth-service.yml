@@ -1,0 +1,32 @@
+server:
+  port: 8788
+
+spring:
+    application:
+        name: auth-service
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    redis:
+        host: jerrys-mac-mini.wernerds.net
+        port: 6379
+    jackson:
+        serialization.indent_output: true
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:mysql://jerrys-mac-mini.wernerds.net:3306/auth?useUnicode=true&characterEncoding=utf8&useSSL=false&verifyServerCertificate=false
+        name:
+        username: root
+        password: root
+        hikari:
+            data-source-properties:
+                cachePrepStmts: true
+                prepStmtCacheSize: 250
+                prepStmtCacheSqlLimit: 2048
+                useServerPrepStmts: true
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
+        show-sql: false

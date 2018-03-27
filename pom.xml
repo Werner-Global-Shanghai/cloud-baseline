@@ -9,6 +9,7 @@
 	<name>enspringcloud</name>
 
 	<modules>
+		<module>auth-service</module>
 		<module>config</module>
 		<module>registry</module>
 		<module>gateway</module>
